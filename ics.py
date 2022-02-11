@@ -13,8 +13,8 @@ def sd(urlid,format_time):
     # tomorrow = (datetime.date.today() + datetime.timedelta(days=1)).strftime("%Y%m%d")
     with open(file="wsakb48tsh.ics", encoding="utf8", mode="w") as file_object:
         start_string = "BEGIN:VCALENDAR\nVERSION:2.0\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nX-WR-CALNAME:" \
-                       + "微博发握手日程" + "\nX-WR-TIMEZONE:Asia/Shanghai\n" \
-                       + "X-WR-CALDESC:"+bd+"发布了微博握手\n"
+                       + "微博发布握手日程" + "\nX-WR-TIMEZONE:Asia/Shanghai\n" \
+                       + "X-WR-CALDESC:"+bd+"微博发布了握手\n"
         file_object.write(start_string)
         body = gyfwb.lastfanhui(urlid)
         body_string = ("BEGIN:VEVENT\nDTSTAMP:20190912T184136Z\nUID:",
