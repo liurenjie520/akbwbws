@@ -1,0 +1,4 @@
+pycryptodome
+requests
+lxml
+django
