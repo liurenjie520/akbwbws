@@ -1,6 +1,6 @@
 
 import datetime
-
+import requests
 
 import gyfwb
 import shuijishu
@@ -50,6 +50,7 @@ def isgytrue(urlid,format_time):
         else:
             print('有握手动态！正在生成ics')
             sd(urlid,format_time)
+            requests.get("https://api.day.app/xQvkTS3VuhXsNBP74GVX78/有握手！")
 
 
 
