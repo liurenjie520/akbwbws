@@ -1,7 +1,7 @@
 import json
 import time
 from pprint import pprint
-
+import pushwx
 import requests
 import re
 
@@ -78,6 +78,7 @@ def panduanisgy(urlid):
         if zifu2 in textwenben:
             if zifu3 in textwenben:
                 beizhu = textwenben
+                pushwx.panduanisgy(urlid)
             else:
                 beizhu = '没有发布握手'
         else:
